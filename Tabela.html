@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com Tabelas</title>
+
+        <style>
+
+            table tr:nth-child(even){
+                background-color: rgb(236, 233, 233);
+            }
+
+            table tr:hover td {
+                background-color: darkolivegreen;
+            }
+
+            table thead th {
+                background-color:  black;
+            }
+            table{
+
+                div {
+        box-shadow: 10px 10px 5px lightblue;
+    }
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            .form-container {
+                max-width: 600px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"], textarea, select {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+
+</head>
+<body bgcolor="silver">
+    <div class="form-container">
+        
+        <div class="form-group"></div>
+            <label for="id"><a href="index.html"><fontrigh><img title="Clique para Voltar"  src="3240644.png" height="30" alt="'Clique para Voltar'"></a></label>
+    
+        <h1>Trabalhando com Tabelas</h1><hr>
+        <h2>Histórico de Cursos</h2>
+                
+        <form>
+            <div class="form-group">
+                
+                <table summary="Tabela de Lista de Cursos" border="0" whidth="400" align="center" cellspacing="0">
+                    
+                    <tr>
+                        <td colspan="3" align="center">INFORMAÇÕES</td>
+                    </tr>
+                    
+                    
+                    <tr align="center">
+                        <td style="width: 200px;">Cursos</td>
+                        <td style="width: 400px;">Disciplinas</td>
+                        <td style="width: 200px;">Status</td>
+                     </tr>
+
+                    <tr align="center">
+                        <td>Programação</td>
+                        <td>Lógica de Programação</td>
+                        <td>Completado</td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Programação</td>
+                        <td>Levantamento de Requisitos</td>
+                        <td>Completado</td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Programação</td>
+                        <td>HTML Básico</td>
+                        <td>Em Conclusão</td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Programação</td>
+                        <td>CSS</td>
+                        <td>Não Iniciado</td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Programação</td>
+                        <td>JavaScript</td>
+                        <td>Não Iniciado</td>
+                    </tr>
+
+                </table>
+            </div>
+        
+    </div>
+</body>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos - Livro de Notas Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body bgcolor="silver">
+    <div class="form-container">
+        
+        <div class="form-group"></div>
+            <label for="id"><a href="index.html"><fontrigh><img title="Clique para Voltar"  src="3240644.png" height="30" alt="'Clique para Voltar'"></a></label>
+    
+        <h1>Cadastro de Tarefas</h1><hr>
+        <h2>Livro de Notas Online</h2>
+                
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Estudante</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <input type="text" id="ultimo" name="ultimo" placeholder="Último">
+            </div>
+            <div class="form-group">
+                <label for="id">#ID do Estudante</label>
+                <input type="text" id="id" name="id">
+            </div>
+            <div class="form-group">
+                <label for="status">Status da Tarefa</label>
+                <select id="status" name="status">
+                    <option selected value="select">Selecione Uma Opção</option>
+                    <option value="completa">Completa</option>
+                    <option value="incompleta">Incompleta</option>
+                    <option value="naoRealizada">Não Realizada</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentários e menções</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Selecione seu Arquivo</label>
+                <input type="file" name="Arquivo" value="Segunda">
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios"># Selecione o Dia da Apresentação da Terefa</label>
+                <input type="radio" name="apresentação[]" value="Segunda">  Segunda-Feira
+                <input type="radio" name="apresentação[]" value="quarta">  Quarta-Feira
+                <input type="radio" name="apresentação[]" value="sexta">  Sexta-Feira
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios"># Informe os Materiais que irá Precisar para essa Apresentação</label>
+                <input type="checkbox" name="Materiais[]" value="Computador">  Computador
+                <input type="checkbox" name="Materiais[]" value="Projetor">  Projetor
+                <input type="checkbox" name="Materiais[]" value="Internet">  Internet
+                
+            </div>
+            <div class="form-group">
+            <center><button type="submit" onclick="alert('Tarefa Cadastrada')">Enviar</button>
+                    <button type="reset" onclick="alert('Frormulário Limpo')">Limpar</button></center>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
